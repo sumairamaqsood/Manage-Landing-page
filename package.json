@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir public\\css 2>nul & tailwindcss -i ./input.css -o ./public/css/main.css",
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
     "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
   },
   "keywords": [],
