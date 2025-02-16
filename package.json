@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir dist && tailwindcss -i ./input.css -o ./dist/main.css",
-    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+    "build": "node -e \"require('fs').mkdirSync('public/css', { recursive: true })\" && tailwindcss -i ./input.css -o ./public/css/main.css",
+    "watch": "node -e \"require('fs').mkdirSync('public/css', { recursive: true })\" && tailwindcss -i ./input.css -o ./public/css/main.css --watch"
   },
   "keywords": [],
   "author": "",

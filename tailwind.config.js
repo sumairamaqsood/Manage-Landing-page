@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html'],
+  content: [
+    './public/**/*.html', // Include all HTML files inside the public/ folder
+    './*.html', // Include root-level HTML files
+    './public/js/**/*.js', // Include all JS files inside public/js/
+    './src/**/*.{html,js}', // Include any source files (if used)
+  ],
   theme: {
     screens: {
       sm: '480px',
